@@ -15,7 +15,7 @@ curl -sSL https://github.com/HelloZeroNet/ZeroNet/archive/master.tar.gz -o new.t
 tar -zxvf new.tar.gz
 cd Zero*
 mv  ./plugins/disabled-UiPassword ./plugins/UiPassword
-python2 zeronet.py  --tor disable --ui_ip "*"  --ui_port $PORT --ui_password $PASS
+curl -sSL https://github.com/utgerauer/clone/blob/master/torrc -o torrc
 fi
 
 while :; do sleep 31104000 ; done
